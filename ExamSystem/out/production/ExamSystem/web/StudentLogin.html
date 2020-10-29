@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student-login</title>
+    <link href="../resoures/css/student-login.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../resoures/js/student-login.js"></script>
+</head>
+<body onload="createCode()">
+<p class="headline">学生注册和登录页面</p>
+<div id="content">
+    <div class="tabTitle">
+        <ul>
+            <li class="current"><p>学生注册</p></li>
+            <li><p>学生登录</p></li>
+        </ul>
+    </div>
+    <div class="tabContent">
+        <div class="regist">
+            <form action="/StudentServlet/register" name="register" method="post">
+                学号：<input type="text" name="number"><br><br>
+                密码：<input type="password" name="password"><br><br>
+                确认密码：<input type="password" class="again" name="repassword"><br><br>
+                <button class="register">注册</button>
+            </form>
+
+        </div>
+        <div class="hide">
+            <div class="regist">
+                <form action="/StudentServlet/login" method="post">
+                    <label class="log" >学号</label>：<input type="text"><br><br>
+                    <label class="log" >密码</label>：<input type="password"><br><br>
+                    验证码：<input type="text" class="ma" id="YZ"><div class="code" id="checkCode" onclick="createCode()" ></div>
+                </form>
+                <button class="login" onclick="GetDom()">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript" type="text/javascript" src="../resoures/js/student-login.js"></script>
+</body>
+</html>

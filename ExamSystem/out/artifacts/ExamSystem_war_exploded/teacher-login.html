@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>teacher-login</title>
+	<link href="../resoures/css/teacher-login.css" rel="stylesheet" type="text/css"/>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body onload="createCode()">
+	<div id="content">
+	    <h2>欢迎教师登录</h2>
+		<form action="http://localhost:8080/TeacherServlet/login" method="post">
+			工号：<input type="text" name="number"><br><br>
+			密码：<input type="password" name="password"><br><br>
+			验证码：<input type="text" class="ma" id="YZ"><div class="code" id="checkCode" onclick="createCode()" ></div>
+			<button class="login" onclick="GetDom()">登录</button>
+		</form>
+
+	</div>
+    <script language="javascript" type="text/javascript" src="../resoures/js/teacher-login.js"></script>
+</body>
+</html>

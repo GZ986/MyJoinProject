@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--默认配置-->
+    <default-config>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <!--        数据库url-->
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/examsystem</property>
+        <!--        数据库用户名密码-->
+        <property name="user">root</property>
+        <property name="password">root</property>
+        <property name="initialPoolSize">10</property>
+        <property name="maxIdleTime">30</property>
+        <property name="maxPoolSize">100</property>
+        <property name="minPoolSize">10</property>
+        <property name="maxStatements">200</property>
+    </default-config>
+
+    <!--    &lt;!&ndash;配置连接池mysql&ndash;&gt;-->
+    <!--    &lt;!&ndash;    自定义连接池的名字 &ndash;&gt;-->
+    <!--    <named-config name="c3p0">-->
+    <!--        &lt;!&ndash;        数据库驱动&ndash;&gt;-->
+    <!--        <property name="driverClass">com.mysql.jdbc.Driver</property>-->
+    <!--        &lt;!&ndash;        数据库url&ndash;&gt;-->
+    <!--        <property name="jdbcUrl">jdbc:mysql://localhost:3306/db_test1</property>-->
+    <!--        &lt;!&ndash;        数据库用户名密码&ndash;&gt;-->
+    <!--        <property name="user">root</property>-->
+    <!--        <property name="password">123456</property>-->
+    <!--        &lt;!&ndash;        初始化链接数&ndash;&gt;-->
+    <!--        <property name="initialPoolSize">10</property>-->
+    <!--        &lt;!&ndash;        最大空闲时间&ndash;&gt;-->
+    <!--        <property name="maxIdleTime">30</property>-->
+    <!--        &lt;!&ndash;        连接池中保留最大连接数&ndash;&gt;-->
+    <!--        <property name="maxPoolSize">100</property>-->
+    <!--        &lt;!&ndash;        最小连接数&ndash;&gt;-->
+    <!--        <property name="minPoolSize">10</property>-->
+    <!--        &lt;!&ndash;        最大连接数&ndash;&gt;-->
+    <!--        <property name="maxStatements">200</property>-->
+    <!--    </named-config>-->
+
+</c3p0-config>
